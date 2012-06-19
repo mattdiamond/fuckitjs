@@ -4,7 +4,6 @@ FuckItJS
 Javascript Boilerplate for Error (Message) Free Code
 ------------------------------------------------------
 
-
 **Installation**
 
 1. Put your code where it says "YOUR CODE GOES HERE"

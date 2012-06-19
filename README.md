@@ -14,5 +14,4 @@ FAQ
 -------
 
 **Do you have a version that uses jQuery for no real reason?**
-
 Yes! Check out fuckit.jquery.js for all your jQuery needs.

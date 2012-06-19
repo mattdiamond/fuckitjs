@@ -2,7 +2,7 @@
     FuckItJS v1.0.0-alpha
     Copyright 2012, Matt Diamond
 
-    Note: This is ALPHA software and result in irreversible brain damage.
+    Note: This is ALPHA software and may result in irreversible brain damage.
  */
 
 try {

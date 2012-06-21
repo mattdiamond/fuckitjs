@@ -1,7 +1,15 @@
 FuckItJS
 ========
 
-### Javascript Boilerplate for Error (Message) Free Code
+### Javascript Error Steamroller
+
+FuckItJS uses state-of-the-art technology to make sure your javascript code runs whether your compiler likes it or not.
+
+Technology
+----------
+
+Through a process known as *Eval-Rinse-Reload-And-Repeat*, FuckItJS repeatedly compiles your code, detecting errors and slicing those lines out of the script.
+To survive such a violent process, FuckItJS reloads itself after each iteration, allowing the onerror handler to catch every single error in your terribly written code.
 
 Installation
 ------------
@@ -14,11 +22,16 @@ API
 
 **FuckIt**(*path_to_script*)
 
-This will keep running your code until all errors have been sliced off like mold on a piece of perfectly good bread.
+This will keep evaluating your code until all errors have been sliced off like mold on a piece of perfectly good bread.
+Whether or not the remaining code is even worth executing, we don't know. We also don't particularly care.
 
 FAQ
 -------
 
-**What the hell?**
+**1) Is this a good idea?**
 
-Don't think too hard about it.
+Of course not. This is quite possibly the worst javascript plugin ever written.
+
+**2) Isn't "eval" evil?**
+
+See Question #1.

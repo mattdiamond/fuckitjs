@@ -24,6 +24,11 @@ API
 This will keep evaluating your code until all errors have been sliced off like mold on a piece of perfectly good bread.
 Whether or not the remaining code is even worth executing, we don't know. We also don't particularly care.
 
+**FuckIt.noConflict**()
+
+Are you using two different FuckIt libraries? Fuck it, use FuckIt.NoConflict.
+Of course, this won't really help since FuckItJS reloads itself multiple times and will re-overwrite the global FuckIt variable, but hey... at least you can feel like you're doing something smart.
+
 FAQ
 -------
 

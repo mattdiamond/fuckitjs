@@ -1,7 +1,6 @@
 FuckItJS
 ========
-
-## Javascript Error Steamroller
+### Javascript Error Steamroller
 
 FuckItJS uses state-of-the-art technology to make sure your javascript code runs whether your compiler likes it or not.
 

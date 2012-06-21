@@ -27,7 +27,7 @@ Whether or not the remaining code is even worth executing, we don't know. We als
 **FuckIt.noConflict**()
 
 Are you using two different FuckIt libraries? Fuck it, use FuckIt.NoConflict.
-Of course, this won't really help since FuckItJS reloads itself multiple times and will re-overwrite the global FuckIt variable, but hey... at least you can feel like you're doing something smart.
+Of course, this won't really help since FuckItJS reloads itself multiple times and will continually overwrite the global FuckIt variable, but hey... at least you can feel like you're doing something smart.
 
 FAQ
 -------

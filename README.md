@@ -6,13 +6,19 @@ FuckItJS
 Installation
 ------------
 
-1. Put your code where it says "YOUR CODE GOES HERE"
-2. Run the code
-3. Did it work? Great. If not, fuck it.
+1. Include "fuckit.js"
+2. The End
+
+API
+---
+
+**FuckIt**(*path_to_script*)
+
+This will keep running your code until all errors have been sliced off like mold on a piece of perfectly good bread.
 
 FAQ
 -------
 
-**Do you have a version that uses jQuery for no real reason?**
+**What the hell?**
 
-Yes! *fuckit.jquery.js* has been fine-tuned to harness the expressive power of the jQuery library.
+Don't think too hard about it.

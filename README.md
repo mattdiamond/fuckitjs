@@ -19,7 +19,7 @@ Installation
 API
 ---
 
-**FuckIt**(*path_to_script*)
+**FuckIt**(*path_to_your_shitty_script_file*)
 
 This will keep evaluating your code until all errors have been sliced off like mold on a piece of perfectly good bread.
 Whether or not the remaining code is even worth executing, we don't know. We also don't particularly care.

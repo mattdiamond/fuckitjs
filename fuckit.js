@@ -18,13 +18,16 @@
       url: script,
       dataType: "text"
     });
-    req.always(function(result){
+    req.then(function(result){
       window.fuckedScript = result;
       eval(window.fuckedScript);
+    }, function(){
+      throw new Error("Could not load script: "+script);
     });
   }
 
   window.onerror = function(error, url, line){
+    if (!window.fuckedScript) return;
     var parsed = window.fuckedScript.split("\n");
     parsed.splice(line - 1, 1);
     window.fuckedScript = parsed.join("\n");

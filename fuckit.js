@@ -12,10 +12,6 @@
   var _FuckIt = window.FuckIt;
 
   var FuckIt = function(script){
-    if (window.fuckedScript){
-      eval(window.fuckedScript);
-      return;
-    }
     var req = $.ajax({
       url: script,
       dataType: "text"

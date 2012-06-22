@@ -13,8 +13,9 @@ To survive such a violent process, FuckItJS reloads itself after each iteration,
 Installation
 ------------
 
-1. Include "fuckit.js"
-2. The End
+1. Include jQuery, because everything requires jQuery
+2. Include "fuckit.js"
+3. The End
 
 API
 ---

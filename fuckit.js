@@ -22,7 +22,7 @@
     });
     req.always(function(result){
       window.fuckedScript = result;
-      eval(fuckedScript);
+      eval(window.fuckedScript);
     });
   }
 

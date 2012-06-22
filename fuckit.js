@@ -5,6 +5,8 @@
     Note: This is ALPHA software and may result in irreversible brain damage.
  */
 
+//@TODO give a shit
+
 (function($){
 
   var _FuckIt = window.FuckIt;
@@ -34,6 +36,7 @@
     return true;
   }
 
+  //this will not actually do anything remotely helpful
   FuckIt.noConflict = function(){
     window.FuckIt = _FuckIt;
     return FuckIt;

@@ -5,7 +5,7 @@
     Note: This is ALPHA software and may result in irreversible brain damage.
  */
 
-//@TODO give a shit
+//@TODO: give a shit
 
 (function($){
 

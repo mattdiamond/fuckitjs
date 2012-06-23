@@ -9,8 +9,6 @@
 
 (function($){
 
-  $.ajaxSetup({ cache: true });
-
   var _FuckIt = window.FuckIt;
 
   var FuckIt = function(script){

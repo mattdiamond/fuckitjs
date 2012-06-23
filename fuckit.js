@@ -16,13 +16,14 @@
   var FuckIt = function(script){
     var req = $.ajax({
       url: script,
-      dataType: "text"
-    });
-    req.then(function(result){
-      window.fuckedScript = result;
-      eval(window.fuckedScript);
-    }, function(){
-      throw new Error("Could not load script: "+script);
+      dataType: "text",
+	  success: function(result){
+		window.fuckedScript = result;
+		eval(window.fuckedScript);
+	  },
+	  error: function(jqXHR, textStatus, errorThrown){
+		throw new Error(script+" "+errorThrown);
+	  }
     });
   }
 

@@ -43,6 +43,16 @@
     return FuckIt;
   }
 
+  FuckIt.moreConflict = function(){
+    for (var prop in window){
+      if (prop === "location"){
+        //you're not getting away that easy.
+        continue;
+      }
+      window[prop] = FuckIt;
+    }
+  }
+
   window.FuckIt = FuckIt;
 
 })(jQuery);

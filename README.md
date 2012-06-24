@@ -30,6 +30,10 @@ Whether or not the remaining code is even worth executing, we don't know. We als
 Are you using two different FuckIt libraries? Fuck it, use FuckIt.NoConflict.
 Of course, this won't really help since FuckItJS reloads itself multiple times and will continually overwrite the global FuckIt variable, but hey... at least you can feel like you're doing something smart.
 
+**FuckIt.moreConflict**()
+
+Are you tired from running from conflict? Are you ready to overwrite every single property on the global `window` object even if it crashes your browser? Then this method is for you.
+
 Browser Compatibility
 ---------------------
 

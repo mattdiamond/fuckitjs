@@ -32,7 +32,7 @@ Of course, this won't really help since FuckItJS reloads itself multiple times a
 
 **FuckIt.moreConflict**()
 
-Are you tired from running from conflict? Are you ready to overwrite every single property on the global `window` object even if it crashes your browser? Then this method is for you.
+Are you tired of running from conflict? Are you ready to overwrite every single property on the global `window` object even if it crashes your browser? Then this method is for you.
 
 Browser Compatibility
 ---------------------

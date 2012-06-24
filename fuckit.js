@@ -35,7 +35,6 @@
       iframe.id = "FuckIt::" + script;
       iframe.style.display = "none";
       document.body.insertBefore(iframe, document.body.firstChild);
-      console.log(iframe);
       iframe.contentWindow.onerror = createErrorHandler(script);
     }
     iframe.contentWindow.setTimeout(_FuckedScripts[script], 0);

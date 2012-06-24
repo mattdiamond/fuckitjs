@@ -38,10 +38,7 @@
   }
 
   //this will not actually do anything remotely useful
-  FuckIt.noConflict = function(){
-    window.FuckIt = _FuckIt;
-    return FuckIt;
-  }
+  FuckIt.noConflict = function(){return}
 
   window.FuckIt = FuckIt;
 

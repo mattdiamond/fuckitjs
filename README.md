@@ -50,6 +50,13 @@ Of course not. This is quite possibly the worst javascript plugin ever written.
 
 See Question #1.
 
+Support
+-------
+
+For technical issues: [@mattdiamond](http://twitter.com/mattdiamond) on Twitter, or e-mail me at [mdiamond@jhu.edu](mailto:mdiamond@jhu.edu)
+
+For personal issues: Take a deep breath, it's going to be okay.
+
 LICENSE
 -------
 

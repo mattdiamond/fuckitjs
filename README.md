@@ -25,6 +25,8 @@ API
 This will keep evaluating your code until all errors have been sliced off like mold on a piece of perfectly good bread.
 Whether or not the remaining code is even worth executing, we don't know. We also don't particularly care.
 
+FuckIt returns a promise that will be resolved once your godforsaken code actually makes it to the finish line. You can use this callback to chain additional FuckIt calls, since we all know calling it once won't do enough damage to the Internet.
+
 **FuckIt.noConflict**()
 
 Are you using two different FuckIt libraries? Fuck it, use FuckIt.NoConflict.

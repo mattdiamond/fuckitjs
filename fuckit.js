@@ -14,16 +14,18 @@
   var _FuckIt = window.FuckIt;
 
   var FuckIt = function(script){
-    var req = $.ajax({
+    window.fuckingDeferred = $.Deferred();
+    $.ajax({
       url: script,
       dataType: "text"
-    });
-    req.then(function(result){
+    }).then(function(result){
       window.fuckedScript = result;
       eval(window.fuckedScript);
+      window.fuckingDeferred.resolve();
     }, function(){
       throw new Error("Could not load script: "+script);
     });
+    return window.fuckingDeferred.promise();
   }
 
   window.onerror = function(error, url, line){
@@ -33,6 +35,7 @@
     window.fuckedScript = parsed.join("\n");
     $.getScript("fuckit.js", function(){
       eval(window.fuckedScript);
+      window.fuckingDeferred.resolve();
     });
     return true;
   }

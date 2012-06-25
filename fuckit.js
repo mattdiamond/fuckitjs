@@ -52,6 +52,20 @@
       window[prop] = FuckIt;
     }
   }
+  
+  FuckIt.randomConflict = function(){
+    for (var prop in window){
+        if (prop === "location")
+            continue;
+        
+        var isItFucked = Math.random();
+        var fuckedThreshold = Math.random();
+        if(isItFucked < fuckedThreshold)
+            window[prop] = FuckIt;
+        else
+            continue;
+    }
+  }
 
   window.FuckIt = FuckIt;
 

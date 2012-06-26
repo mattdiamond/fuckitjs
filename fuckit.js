@@ -46,7 +46,7 @@
     return FuckIt;
   }
 
-  FuckIt.moreConflict = function(){
+  FuckIt.moarConflict = function(){
     for (var prop in window){
       if (prop === "location"){
         //you're not getting away that easy.

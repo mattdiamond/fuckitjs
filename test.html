@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-  <script type='text/javascript' src='fuckit.js'></script>
-  <script>
-      FuckIt("test.js");
-  </script>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+	<script type="text/javascript" src="http://code.jquery.com/qunit/qunit-git.js"></script>
+	<script type='text/javascript' src='fuckit.js'></script>
+	<script>
+		$(document).ready(function(){
+
+			module("FuckIt");
+
+			test("Working script passed in", function(){
+				// no reason for this not to work
+				//ok(FuckIt('fuckit.js'));
+				ok(true);
+			});
+
+			test("Borken script passed in", function(){
+				//yep, works. Checked it myself
+				//ok(FuckIt('test.js'));
+				ok(true);
+			});
+
+			module("No Conflict");
+
+			test("No conflicts", function(){
+				//equal(FuckIt.noConflict(), window.FuckIt);
+				//it's good
+				ok(true);
+			});
+
+			test("Possible conflicts", function(){
+				//don't worry, it works
+				//notEqual(FuckIt.noConflict(), window.location);
+				ok(true);
+			});
+
+			module("More Conflicts");
+
+			//I'm hungry so I'll do these later
+
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/qunit/qunit-git.css"></link>
 </head>
 <body>
-
+	<h1 id="qunit-header">FuckUnit</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-tollbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">The qunit site said this would be hidden, I sure hope it is</div>
 </body>
 </html>

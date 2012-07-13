@@ -52,6 +52,10 @@ Of course not. This is quite possibly the worst javascript plugin ever written.
 
 See Question #1.
 
+**3) Help! I have way too much money and desperately need to give a sizeable portion of it to you!**
+
+Have no fear: I am now accepting donations via GitTip! https://www.gittip.com/mattdiamond/
+
 Support
 -------
 

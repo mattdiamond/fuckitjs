@@ -32,7 +32,7 @@ FuckIt returns a promise that will be resolved once your godforsaken code actual
 Are you using two different FuckIt libraries? Fuck it, use FuckIt.NoConflict.
 Of course, this won't really help since FuckItJS reloads itself multiple times and will continually overwrite the global FuckIt variable, but hey... at least you can feel like you're doing something smart.
 
-**FuckIt.moreConflict**()
+**FuckIt.moarConflict**()
 
 Are you tired of running from conflict? Are you ready to overwrite every single property on the global `window` object even if it crashes your browser? Then this method is for you.
 

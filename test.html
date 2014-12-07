@@ -4,6 +4,7 @@
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 	<script type="text/javascript" src="http://code.jquery.com/qunit/qunit-git.js"></script>
 	<script type='text/javascript' src='fuckit.js'></script>
+    <script type="text/javascript" src="fuckit-quirks.js"></script>
 	<script>
 		$(document).ready(function(){
 
@@ -38,6 +39,25 @@
 			module("More Conflicts");
 
 			//I'm hungry so I'll do these later
+
+
+            module("Quirks Mode");
+
+            test("Quirks Mode", function(){
+                window.testQuirks = {
+                    a: function(){ return 1 },
+                    b: function(){ return 'Test' },
+                    c: function(){ return null },
+                    d: function(){ return new Date(2014,0,1) },
+                    e: function(){ return { foo: 'bar' } },
+                    f: function(){ return [] },
+                    g: function(){ return undefined }
+                };
+                FuckIt.quirksMode();
+
+                // how do you test this?
+                ok(true); // urg... fuck it.
+            })
 
 		});
 	</script>

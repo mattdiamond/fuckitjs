@@ -36,6 +36,18 @@ Of course, this won't really help since FuckItJS reloads itself multiple times a
 
 Are you tired of running from conflict? Are you ready to overwrite every single property on the global `window` object even if it crashes your browser? Then this method is for you.
 
+**FuckIt.quirksMode**( _scope_, _probability_ ) - browser support: IE9+
+
+So your skillz are 1337 - your application is beautiful, or at least running - and fuck it, that will do!  But can it survive the insidious "quirks" mode? This feature simulates the pain of coding in a world without standards.
+
+_Parameters_
+
+ - **scope** (optional) root context, if unspecified this defaults to the _window_ object.  Quirks-mode may only be enacted once per scope-object.
+ - **probability** (optional) 1 in N chance of quirkiness in the code, defaults to 3.
+
+Before initiating quirks-mode, ensure you have included the highly configurable API by adding at least one callback to each of the registered data-types (see: fuckit-quirks.js).  Each function accepts a single input parameter and may be used to manipulate data in any way before you return it.
+
+
 Browser Compatibility
 ---------------------
 

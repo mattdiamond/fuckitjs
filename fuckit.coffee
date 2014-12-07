@@ -46,4 +46,7 @@ $ ->
   FuckIt.moreConflict = () ->
     window[prop] = FuckIt for prop in window when prop isnt 'location'
 
+  FuckIt.quirksMode = () ->
+    throw new Error "Coffee what?! Fuck this shit." #todo
+
   window.FuckIt = FuckIt;

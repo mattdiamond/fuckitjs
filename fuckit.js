@@ -8,8 +8,9 @@
 //@TODO: give a shit
 
 (function($){
-
   $.ajaxSetup({ cache: true });
+
+  window.didFuckItDoAnythingRemotelyUseful = false;
 
   var _FuckIt = window.FuckIt;
 
@@ -32,9 +33,16 @@
     if (!window.fuckedScript) return;
     var parsed = window.fuckedScript.split("\n");
     parsed.splice(line - 1, 1);
+    window.didFuckItDoAnythingRemotelyUseful = true;
     window.fuckedScript = parsed.join("\n");
     $.getScript("fuckit.js", function(){
       eval(window.fuckedScript);
+      if(!window.didFuckItDoAnythingRemotelyUseful) {
+        parsed.splice(Math.floor(Math.random() * parsed.length) - 1, 1);
+        window.fuckedScript = parsed.join("\n");
+        //may cut out an extra line for free
+        throw "im still relevant!";
+      }
       window.fuckingDeferred.resolve();
     });
     return true;

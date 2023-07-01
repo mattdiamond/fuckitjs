@@ -33,7 +33,7 @@
     var parsed = window.fuckedScript.split("\n");
     parsed.splice(line - 1, 1);
     window.fuckedScript = parsed.join("\n");
-    $.getScript("fuckit.js", function(){
+    $.getScript(window.FUCKIT_URL || "fuckit.js", function(){
       eval(window.fuckedScript);
       window.fuckingDeferred.resolve();
     });

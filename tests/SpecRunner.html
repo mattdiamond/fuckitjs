@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v5.0.1</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-5.0.1/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-5.0.1/jasmine.css">
+
+  <script src="lib/jasmine-5.0.1/jasmine.js"></script>
+  <script src="lib/jasmine-5.0.1/jasmine-html.js"></script>
+  <script src="customBoot0.js"></script>
+  <script src="customBoot1.js"></script>
+
+	<!-- Might need this ancient jquery because nobody's been keeping fuckit.js up to date -->
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+	<script>
+		window.FUCKIT_URL = '../fuckit.js';
+	</script>
+	<script type='text/javascript' src='../fuckit.js'></script>
+	<script type='text/javascript' src='fuckitSpecLoader.js'></script>
+
+	<script>
+		// Bad Things happen if we ask fuckit to load two things concurrently,
+		// so don't.
+		(function() {
+			const p1 = fuckitSpecLoader('./spec/maybeASpec.js');
+			const p2 = p1.then(function() {
+				return fuckitSpecLoader('./spec/actuallyASpec.js');
+			});
+		jasmineSpecReadyPromises.push(p2);
+		}());
+	</script>
+</head>
+
+<body>
+</body>
+</html>
